@@ -1,0 +1,134 @@
+* {padding: 0;margin: 0;}
+body {
+    background-color: #0000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section_inicio {
+    height: 80vh;
+    background-color: #f0cc24;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.titulo {
+    font-size: 8rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 2s forwards;
+}
+
+.description_inicio {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 3s forwards 0.5s;
+}
+
+.btn_inicio {
+    background-color: black;
+    padding: 20px 35px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 15px;
+    animation: slideIn 4s forwards 0.5s;
+}
+
+.section_contenidos {
+    height: 80vh;
+    background-color: black;
+    color: azure;
+    display: flex;
+    justify-content: space-around;  /* Distribuye las tarjetas de forma uniforme */
+    flex-wrap: wrap;                /* Hace que las tarjetas se ajusten en varias filas si es necesario */
+    gap: 20px;  
+
+}
+
+.description_contenidos {
+    background-color: aliceblue;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.style_btn {
+    padding: 5px 20px;
+    color: black;
+    text-decoration: none;
+    background-color: white; 
+    display: flex; 
+    flex-direction: column;           /* Elementos alineados verticalmente */
+    justify-content: center;   /* Asegura que los elementos estén espaciados correctamente */
+    height: 30px;
+    width: 10%;
+    padding: 5px 20px;
+}
+
+.canal1 img {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px;                    /* Espacio interior de la tarjeta */
+    text-align: center;               /* Alineación centrada del contenido */
+    width: 250px;                     /* Ancho fijo para todas las tarjetas */
+    transition: transform 0.3s ease;  /* Transición suave para efectos */
+}
+
+.canal2 img {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px;                    /* Espacio interior de la tarjeta */
+    text-align: center;               /* Alineación centrada del contenido */
+    width: 250px;                     /* Ancho fijo para todas las tarjetas */
+    transition: transform 0.3s ease;  /* Transición suave para efectos */
+}
+
+.canal3 img{
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 15px; 
+    display: flex;
+    flex-direction: column;
+    height: 68%;                   /* Espacio interior de la tarjeta */
+    text-align: center;               /* Alineación centrada del contenido */
+    width: 250px;                     /* Ancho fijo para todas las tarjetas */
+    transition: transform 0.3s ease;  /* Transición suave para efectos */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 0.5;
+        color: #ccc;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        color: #fff;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
